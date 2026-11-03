@@ -380,6 +380,49 @@
   </footer>
 
   <script src="script.js"></script>
+  <!-- Auto-open Messenger Window -->
+<div id="messengerPopup" style="
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 320px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  z-index: 99999;
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+  display: none;
+">
+  <div style="background:#0084ff; color:white; padding:14px 16px; display:flex; justify-content:space-between; align-items:center;">
+    <strong>Messenger</strong>
+    <span id="closePopup" style="cursor:pointer; font-size:20px;">×</span>
+  </div>
+  <div style="padding:20px; text-align:center;">
+    <p style="margin:0 0 16px; color:#333;">გამარჯობა! მოგვწერეთ Messenger-ში</p>
+    <a href="https://m.me/61595854785301" target="_blank" style="
+      background:#0084ff;
+      color:white;
+      padding:12px 24px;
+      border-radius:8px;
+      text-decoration:none;
+      display:inline-block;
+      font-weight:600;
+    ">ჩატის დაწყება</a>
+  </div>
+</div>
+
+<script>
+  // Show popup automatically after 1.5 seconds
+  setTimeout(() => {
+    document.getElementById('messengerPopup').style.display = 'block';
+  }, 1500);
+
+  // Close button
+  document.getElementById('closePopup').onclick = () => {
+    document.getElementById('messengerPopup').style.display = 'none';
+  };
+</script>
 </body>
   <a href="https://m.me/61595854785301" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#0084ff;color:white;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.25);z-index:9999;font-size:28px;">💬</a>
 <a href="https://m.me/61595854785301" target="_blank" style="
