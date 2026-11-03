@@ -54,16 +54,11 @@ const closeSuccess = document.getElementById('closeSuccess');
 
 if (requestForm) {
   requestForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Simple validation already handled by HTML required
-    // In real app: send to backend / Telegram / email
-    
+    // Form will submit normally to Web3Forms
     successOverlay?.classList.add('show');
-    requestForm.reset();
+    // Don't reset immediately so user sees it submitted
   });
 }
-
 if (closeSuccess) {
   closeSuccess.addEventListener('click', () => {
     successOverlay?.classList.remove('show');
