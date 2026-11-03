@@ -401,4 +401,30 @@
 ">
   💬
 </a>
-</html>
+  <!-- Facebook Messenger Chat Plugin -->
+<div id="fb-root"></div>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml: true,
+      version: 'v19.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-customerchat"
+     attribution="biz_inbox"
+     page_id="61595854785301"
+     theme_color="#0084ff"
+     logged_in_greeting="გამარჯობა! რით შემიძლია დაგეხმაროთ?"
+     logged_out_greeting="გამარჯობა! მოგვწერეთ">
+</div></html>
