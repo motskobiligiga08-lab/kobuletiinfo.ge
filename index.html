@@ -11,22 +11,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Facebook Messenger Chat Widget -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml: true,
-      version: 'v18.0'
-    });
-  };
-</script>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-
-<div class="fb-customerchat"
-     attribution="biz_inbox"
-     page_id="61595854785301">
-</div>
   <!-- Header -->
   <header class="header">
     <div class="container header-inner">
@@ -397,4 +381,20 @@
 
   <script src="script.js"></script>
 </body>
+  <!-- Facebook Messenger Chat Widget -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml: true,
+      version: 'v18.0'
+    });
+  };
+</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+<div class="fb-customerchat"
+     attribution="biz_inbox"
+     page_id="61595854785301">
+</div>
 </html>
