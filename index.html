@@ -488,6 +488,47 @@
     document.getElementById('messengerPopup').style.display = 'none';
   };
 </script>
+  <!-- Auto-open WhatsApp Window -->
+<div id="whatsappPopup" style="
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 320px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  z-index: 99998;
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+  display: none;
+">
+  <div style="background:#25D366; color:white; padding:14px 16px; display:flex; justify-content:space-between; align-items:center;">
+    <strong>WhatsApp</strong>
+    <span id="closeWhatsapp" style="cursor:pointer; font-size:20px;">×</span>
+  </div>
+  <div style="padding:20px; text-align:center;">
+    <p style="margin:0 0 16px; color:#333;">დაგვიკავშირდით WhatsApp-ში</p>
+    <a href="https://wa.me/995593902052" target="_blank" style="
+      background:#25D366;
+      color:white;
+      padding:12px 24px;
+      border-radius:8px;
+      text-decoration:none;
+      display:inline-block;
+      font-weight:600;
+    ">ჩატის დაწყება</a>
+  </div>
+</div>
+
+<script>
+  setTimeout(() => {
+    document.getElementById('whatsappPopup').style.display = 'block';
+  }, 2500);
+
+  document.getElementById('closeWhatsapp').onclick = () => {
+    document.getElementById('whatsappPopup').style.display = 'none';
+  };
+</script>
 </body>
   <a href="https://m.me/61595854785301" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#0084ff;color:white;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.25);z-index:9999;font-size:28px;">💬</a>
 <a href="https://m.me/61595854785301" target="_blank" style="
