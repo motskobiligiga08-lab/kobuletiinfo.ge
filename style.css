@@ -756,3 +756,47 @@ button, input, select, textarea { font-family: inherit; }
   .footer-grid { grid-template-columns: 1fr; }
   .header-actions .lang-switch { display: none; }
 }
+
+.header-phone {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--black);
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--gray-100);
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.header-phone:hover {
+  background: var(--lime);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 9999;
+  font-size: 28px;
+  transition: transform 0.2s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .header-phone {
+    display: none;
+  }
+}
